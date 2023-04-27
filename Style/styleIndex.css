@@ -1,3 +1,7 @@
+:root{
+    --principal-red: #B43F4A;
+}
+
 body{
     margin: 0;
     width: 100%;
@@ -8,7 +12,7 @@ body{
 .divSteven{
     width: 50%;
     height: 100vh;
-    background-color: #B43F4A;
+    background-color: var(--principal-red);
 }
 
 .containerEsquerdo{
@@ -43,7 +47,7 @@ body{
 .containerLogin{
     width: 60%;
     height: 80%;
-    border: solid 3px #B43F4A;
+    border: solid 3px var(--principal-red);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -57,7 +61,7 @@ body{
     font-size: 4rem;
     font-weight: 500;
     /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
-    background: linear-gradient(to right, #B43F4A, #F5969F);
+    background: linear-gradient(to right, var(--principal-red), #F5969F);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -68,6 +72,10 @@ body{
     background-color: #fce72d2a;
     border: 3px solid #FCE72D;
     border-radius: 12px;
+}
+
+::placeholder{
+    padding: 15px;
 }
 
 .containerButtons{
@@ -84,6 +92,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     background-color: #DB6873;
-    border: 3px solid #B43F4A;
+    border: 3px solid var(--principal-red);
     border-radius: 25px;
+}
+
+.button:hover{
+    background-color: var(--principal-red);
 }
