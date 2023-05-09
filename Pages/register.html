@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../Style/styleIndex.css">
+    <link rel="stylesheet" href="../Style/styleRegister.css">
+    <script type="module" src="../JS/register.js" defer></script>
     <title>Register</title>
 </head>
 <body>
@@ -26,12 +28,13 @@
     <div class="divLogin">
         <div class="containerLogin">
             <p class="login">Register</p>
-            <input type="text" name="nome" id="inpNome" class="inputLogin" placeholder="Nome">
+            <input type="text" name="nome" id="inpName" class="inputLogin" placeholder="Nome">
             <input type="text" name="email" id="inpEmail" class="inputLogin" placeholder="E-mail">
-            <input type="password" name="senha" id="inpSenha" class="inputLogin" placeholder="Senha">
-            <input type="password" name="senha" id="inpSenha" class="inputLogin" placeholder="Confirme sua senha">
+            <input type="password" name="senha" id="inpPassword" class="inputLogin" placeholder="Senha">
+            <input type="password" name="senha" id="inpConfirmPassword" class="inputLogin" placeholder="Confirme sua senha">
             <div class="containerButtons">
-                <button class="button" id="buttonSignUp">Sign-up</button>
+                <span id="backLogin">Voltar para Login</span>
+                <button class="button" id="btnVerifySignUp">Sign-up</button>
             </div>
         </div>
     </div>

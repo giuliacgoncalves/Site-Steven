@@ -11,19 +11,13 @@ function logar(){
     let emailInp = document.getElementById("inpEmail").value;
     let passwordInp = document.getElementById("inpPassword").value;
 
-    console.log(emailInp,passwordInp)
-
     //forEach não funciona nesse tipo de situação
-    data.every(usuario => {
-        //console.log(usuario.email)
-        if(emailInp == usuario.email && passwordInp == usuario.password){
-            alert("obrigado por logar!")
-            return false;
-        }else{
-            // alert("email ou senha invalidos"); -> causa loop até o 1000
-            return true;
+    for(let i=0; i<data.length; i++){
+        if(emailInp == data[i].email && passwordInp == data[i].password){
+            alert("obrigado por logar!");
+            return;
         }
-    })
+    }
 }
 
 const btnSignUp = document.querySelector("#buttonSignUp");
