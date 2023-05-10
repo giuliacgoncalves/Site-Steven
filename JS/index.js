@@ -11,6 +11,10 @@ function logar(){
     let emailInp = document.getElementById("inpEmail").value;
     let passwordInp = document.getElementById("inpPassword").value;
 
+    if(emailInp =='' || passwordInp==''){
+        alert('Preencha os campos')
+    }
+
     //forEach não funciona nesse tipo de situação
     for(let i=0; i<data.length; i++){
         if(emailInp == data[i].email && passwordInp == data[i].password){
@@ -18,6 +22,14 @@ function logar(){
             return;
         }
     }
+
+    acessarHomePage();
+}
+
+function acessarHomePage(){
+    btnLogin.addEventListener('click', ()=>{
+        location.href = '../Pages/home-page.html'
+    })
 }
 
 const btnSignUp = document.querySelector("#buttonSignUp");
