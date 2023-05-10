@@ -29,13 +29,24 @@ body{
 
 .containerEsquerdo{
     width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .star{
-    margin: 60px;
+    margin-top: 2%;
+    width: 122px;
+    height: 115px;
+    position: absolute;
+    background-image: url('../Images/Star.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divFraseLogin{
+    margin-top: 25%;
 }
 
 .fraseLogin{
