@@ -1,0 +1,129 @@
+:root {
+  --jasmine: #ffdf7bff;
+  --robin-egg-blue: #4dc4c6ff;
+  --light-cyan: rgb(215, 245, 248);
+  --fluorescent-cyan: #5bece1ff;
+  --ivory: #fefef2ff;
+}
+
+* {
+  transition: all 0.4s ease-out;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.divSteven {
+  width: 50%;
+  height: 100vh;
+  background-color: var(--robin-egg-blue);
+}
+
+.imgSteven {
+  width: 100%;
+  height: 50%;
+  background-image: url("../Images/perola.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerEsquerdo {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.star {
+  margin-top: 2%;
+  width: 95px;
+  height: 130px;
+  position: absolute;
+  background-image: url("../Images/perolaGem.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divFraseLogin {
+  margin-top: 25%;
+}
+
+.fraseLogin {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: var(--light-cyan);
+}
+
+.divLogin {
+  width: 50%;
+  height: 100vh;
+  background-color: var(--light-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerLogin {
+  width: 60%;
+  height: 80%;
+  border: solid 3px var(--jasmine);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.login {
+  margin: 0;
+  margin-top: 40px;
+  font-size: 4rem;
+  font-weight: 500;
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(to right, var(--robin-egg-blue), var(--jasmine));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputLogin {
+  width: 60%;
+  height: 50px;
+  background-color: var(--ivory);
+  border: 3px solid var(--jasmine);
+  border-radius: 12px;
+  outline: none;
+}
+
+::placeholder {
+  padding: 15px;
+}
+
+.containerButtons {
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  background-color: var(--robin-egg-blue);
+  border: 3px solid var(--fluorescent-cyan);
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: var(--fluorescent-cyan);
+}
