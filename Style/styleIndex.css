@@ -1,9 +1,15 @@
+/* https://www.youtube.com/watch?v=GHYrs-BDmdw 
+https://www.youtube.com/watch?v=GHYrs-BDmdw */
 :root{
     --redwood: #b43f4aff;
     --mustard: #ffdc3eff;
     --vanilla: #fef4acff;
     --bright-pink-crayola: #ff5d6cff;
     --bistre: #331f1fff;
+}
+
+*{
+    transition: all 0.4s ease-out;
 }
 
 body{

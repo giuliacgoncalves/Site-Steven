@@ -36,3 +36,16 @@ const btnSignUp = document.querySelector("#buttonSignUp");
 btnSignUp.addEventListener('click', ()=>{
     location.href = '../Pages/register.html'
 })
+
+var themeSteven = "../Style/styleIndex.css";
+var themeAmetista = "../Style/styleIndexAmetista.css";
+var gemButton = document.querySelector("#imgChange");
+gemButton.addEventListener('click', trocarTema);
+
+function trocarTema(){
+    console.log('teste')
+    document.querySelector(".caminhoCss").href = themeSteven;
+    let aux = themeSteven;
+    themeSteven = themeAmetista;
+    themeAmetista = aux;
+}

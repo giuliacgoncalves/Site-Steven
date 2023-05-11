@@ -1,10 +1,16 @@
-/* https://www.youtube.com/watch?v=Q_jJzUiG3HY */
+/* https://www.youtube.com/watch?v=Q_jJzUiG3HY 
+https://www.youtube.com/watch?v=SBq-kXXn1PQ
+https://www.youtube.com/watch?v=yU0mpEpBaGM*/
 :root{
     --raisin-black: #232228ff;
     --lavender-web: #dcd3f0ff;
     --wisteria: rgb(188, 139, 216);
     --phlox: #d752feff;
     --amethyst: #a461edff;
+}
+
+*{
+    transition: all 0.4s ease-out;
 }
 
 body{
