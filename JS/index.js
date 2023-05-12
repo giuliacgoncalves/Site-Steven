@@ -57,32 +57,37 @@ gemButtons.forEach(gemBtn => {
 /* ↓ Função de troca do tema ↓ */
 
 function trocarTema(evt){
-    let alvoClicado = evt.target;
-    let idAlvoClicado = evt.target.getAttribute('id');
-    let caminho = document.querySelector(".caminhoCss");
-    let temaAtual = '...'
-    // console.log(temaAtual);
+    let alvoClicado = evt.target.parentNode
+    let idAlvoClicado = alvoClicado.getAttribute('id')
+    let caminho = document.querySelector(".caminhoCss")
+    let temaAtual = 'sda'
 
-    if(idAlvoClicado == 'steven') {
-        console.log("cliquei no steven");
+// parentNode
+
+    console.log(alvoClicado)
+    if(idAlvoClicado == 'steven' && temaAtual != 'steven') {
+        console.log("cliquei no steven")
         // alvoClicado.classList.add("selecionado")
-        caminho.href = themeSteven;
+        caminho.href = themeSteven
     }
-    else if(idAlvoClicado == 'pearl') {
-        console.log("cliquei na pearl");
-        caminho.href = themePearl;
+    else if(idAlvoClicado == 'pearl' && temaAtual != 'pearl') {
+        console.log("cliquei na pearl")
+        caminho.href = themePearl
     }
-    else if(idAlvoClicado == 'ametista') {
-        console.log("cliquei na ametista");
-        caminho.href = themeAmetista;
+    else if(idAlvoClicado == 'ametista' && temaAtual != 'ametista') {
+        console.log("cliquei na ametista")
+        caminho.href = themeAmetista
     }
-    else if(idAlvoClicado == 'garnet') {
-        console.log("cliquei na garnet");
-        caminho.href = themeGarnet;
+    else if(idAlvoClicado == 'garnet' && temaAtual != 'garnet') {
+        console.log("cliquei na garnet")
+        caminho.href = themeGarnet
     }
-    else if(idAlvoClicado == 'lapis') {
-        console.log("cliquei na lapis");
-        caminho.href = themeLapis;
+    else if(idAlvoClicado == 'lapis' && temaAtual != 'lapis') {
+        console.log("cliquei na lapis")
+        caminho.href = themeLapis
     }
-    console.log(caminho)
+
+
+    // document.querySelector(".caminhoCss").href = themeSteven;
+    console.log(caminho);
 }
