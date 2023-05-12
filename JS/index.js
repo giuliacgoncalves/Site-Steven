@@ -39,13 +39,46 @@ btnSignUp.addEventListener('click', ()=>{
 
 var themeSteven = "../Style/styleIndex.css";
 var themeAmetista = "../Style/styleIndexAmetista.css";
-var gemButton = document.querySelector("#imgChange");
-gemButton.addEventListener('click', trocarTema);
+var themePearl = "../Style/styleIndexPearl.css";
+var themeGarnet = "../Style/styleIndexGarnet.css";
+var themeLapis = "../Style/styleIndexLapis.css";
+var gemButtons = document.querySelectorAll(".gemBtn");
+// console.log(gemButtons)
 
-function trocarTema(){
-    console.log('teste')
-    document.querySelector(".caminhoCss").href = themeSteven;
-    let aux = themeSteven;
-    themeSteven = themeAmetista;
-    themeAmetista = aux;
+gemButtons.forEach(gemBtn => {
+    gemBtn.addEventListener('click', trocarTema);
+})
+
+
+function trocarTema(evt){
+    let alvoClicado = evt.target
+    let idAlvoClicado = evt.target.getAttribute('id')
+    let caminho = document.querySelector(".caminhoCss")
+    let temaAtual = 'sda'
+
+    if(idAlvoClicado == 'steven' && temaAtual != 'steven') {
+        console.log("cliquei no steven")
+        // alvoClicado.classList.add("selecionado")
+        caminho.href = themeSteven
+    }
+    else if(idAlvoClicado == 'pearl' && temaAtual != 'pearl') {
+        console.log("cliquei na pearl")
+        caminho.href = themePearl
+    }
+    else if(idAlvoClicado == 'ametista' && temaAtual != 'ametista') {
+        console.log("cliquei na ametista")
+        caminho.href = themeAmetista
+    }
+    else if(idAlvoClicado == 'garnet' && temaAtual != 'garnet') {
+        console.log("cliquei na garnet")
+        caminho.href = themeGarnet
+    }
+    else if(idAlvoClicado == 'lapis' && temaAtual != 'lapis') {
+        console.log("cliquei na lapis")
+        caminho.href = themeLapis
+    }
+
+
+    // document.querySelector(".caminhoCss").href = themeSteven;
+    console.log(caminho);
 }

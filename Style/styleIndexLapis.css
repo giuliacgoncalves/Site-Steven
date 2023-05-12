@@ -1,135 +1,63 @@
 :root {
   --delft-blue: #262a65ff;
   --true-blue: #306ab3ff;
-  --polynesian-blue: #184793ff;
+  --polynesian-blue: rgb(105, 143, 206);
   --vivid-sky-blue: #4bc8f2ff;
   --non-photo-blue: #afe0eeff;
 }
 
-* {
-  transition: all 0.4s ease-out;
-}
-
-body {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
 .divSteven {
-  width: 50%;
-  height: 100vh;
   background-color: var(--delft-blue);
 }
 
 .imgSteven {
-  width: 100%;
-  height: 50%;
   background-image: url("../Images/lapislazuli.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.containerEsquerdo {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.star {
-  margin-top: 2%;
-  width: 81px;
-  height: 115px;
-  position: absolute;
-  background-image: url("../Images/lapislazuliGem.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.divFraseLogin {
-  margin-top: 25%;
 }
 
 .fraseLogin {
-  margin: 0;
-  font-size: 4rem;
-  font-weight: 500;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: center;
   color: var(--true-blue);
 }
 
 .divLogin {
-  width: 50%;
-  height: 100vh;
   background-color: var(--non-photo-blue);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .containerLogin {
-  width: 60%;
-  height: 80%;
   border: solid 3px var(--true-blue);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .login {
-  margin: 0;
-  margin-top: 40px;
-  font-size: 4rem;
-  font-weight: 500;
   /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
   background: linear-gradient(
     to right,
     var(--delft-blue),
     var(--vivid-sky-blue)
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .inputLogin {
-  width: 60%;
-  height: 50px;
-  background-color: var(--true-blue);
+  background-color: var(--polynesian-blue);
   border: 3px solid var(--delft-blue);
-  border-radius: 12px;
-  outline: none;
 }
 
 ::placeholder {
-  padding: 15px;
   color: var(--non-photo-blue);
 }
 
-.containerButtons {
-  margin-bottom: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .button {
-  width: 150px;
-  height: 50px;
-  font-size: 1.2rem;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: bold;
-  background-color: var(--federal-blue);
-  border: 3px solid var(--oxford-blue);
-  border-radius: 25px;
-  color: var(--hunyadi-yellow);
+  background-color: var(--true-blue);
+  border: 3px solid var(--delft-blue);
+  color: var(--non-photo-blue);
 }
 
 .button:hover {
-  background-color: var(--oxford-blue);
+  background-color: var(--delft-blue);
+}
+
+/* ↓ menu ↓ */
+
+.star {
+  width: 81px;
+  height: 115px;
+  background-image: url("../Images/lapislazuliGem.png");
 }
