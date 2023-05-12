@@ -47,8 +47,7 @@
 
 /* ↓ menu ↓ */
 
-.star{
-    width: 122px;
-    height: 115px;
-    background-image: url('../Images/Star.svg');
+#steven{
+    width: 50px;
+    height: 47px;
 }

@@ -56,8 +56,8 @@
 
 /* ↓ menu ↓ */
 
-.star {
-  width: 81px;
-  height: 115px;
-  background-image: url("../Images/lapislazuliGem.png");
+#lapis {
+  width: 35px;
+  height: 50px;
 }
+

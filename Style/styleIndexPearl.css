@@ -47,8 +47,7 @@
 
 /* ↓ menu ↓ */
 
-.star {
-  width: 95px;
-  height: 130px;
-  background-image: url("../Images/perolaGem.png");
+#pearl {
+  width: 37px;
+  height: 50px;
 }
