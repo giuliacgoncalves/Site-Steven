@@ -1,53 +1,61 @@
-:root{
-    --redwood: #b43f4aff;
-    --mustard: #ffdc3eff;
-    --vanilla: #fef4acff;
-    --bright-pink-crayola: #ff5d6cff;
-    --bistre: #331f1fff;
+:root {
+  --redwood: #b43f4aff;
+  --mustard: #ffdc3eff;
+  --vanilla: #fef4acff;
+  --bright-pink-crayola: #ff5d6cff;
+  --bistre: #331f1fff;
 }
 
-.divSteven{
-    background-color: var(--redwood);
+.divSteven {
+  background-color: var(--redwood);
 }
 
-.imgSteven{
-    background-image: url('../Images/Steven.png');
+.imgSteven {
+  background-image: url("../Images/Steven.png");
 }
 
-.fraseLogin{
-    color: var(--vanilla);
+.fraseLogin {
+  color: var(--vanilla);
 }
 
-.divLogin{
-    background-color: var(--vanilla);
+.divLogin {
+  background-color: var(--vanilla);
 }
 
-.containerLogin{
-    border: solid 3px var(--redwood);
+.containerLogin {
+  border: solid 3px var(--redwood);
 }
 
-.login{
-    /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
-    background: linear-gradient(to right, var(--redwood), var(--bright-pink-crayola));
+.login {
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(
+    to right,
+    var(--redwood),
+    var(--bright-pink-crayola)
+  );
 }
 
-.inputLogin{
-    background-color: var(--vanilla);
-    border: 3px solid var(--mustard);
+.inputLogin {
+  background-color: var(--vanilla);
+  border: 3px solid var(--mustard);
 }
 
-.button{
-    background-color: var(--bright-pink-crayola);
-    border: 3px solid var(--redwood);
+.button {
+  background-color: var(--bright-pink-crayola);
+  border: 3px solid var(--redwood);
 }
 
-.button:hover{
-    background-color: var(--redwood);
+.button:hover {
+  background-color: var(--redwood);
 }
 
 /* ↓ menu ↓ */
 
-#steven{
-    width: 50px;
-    height: 47px;
+#steven {
+  width: 50px;
+  height: 47px;
+}
+
+.star {
+  background-color: var(--mustard);
 }
