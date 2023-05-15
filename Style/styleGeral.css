@@ -109,33 +109,6 @@ body {
   align-items: center;
   position: relative;
 }
-.containerRocks .gemBtn {
-  position: absolute;
-  min-width: 30px;
-  min-height: 30px;
-  border: 1px solid blue;
-  margin: 0px 10px;
-  left: 0px;
-}
-
-.containerRocks .star {
-  margin-bottom: 50px;
-  width: 200px;
-  height: 60px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 25px;
-  font-weight: bold;
-  border: 2px solid black;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.containerRocks.active .star {
-}
-
-.imgGems {
-  width: 50px;
-}
 
 #steven,
 #ametista,
@@ -145,6 +118,45 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.containerRocks .gemBtn {
+  position: absolute;
+  min-width: 30px;
+  min-height: 30px;
+  /* border: 1px solid blue; */
+  margin: 0px 10px;
+  left: calc(50% - 25px);
+  transform-origin: 150px;
+  transition-delay: calc(.1s * var(--i));
+}
+
+.containerRocks.active .gemBtn {
+  transform: rotate(calc(220deg / 5 * var(--i)));
+  left: 23%;
+}
+
+.containerRocks .gemBtn .imgGems {
+  transform: rotate(calc(-220deg / 5 * var(--i)));
+}
+
+.containerRocks .star {
+  margin-bottom: 25px;
+  width: 100px;
+  height: 100px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  font-weight: bold;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
+.imgGems {
+  width: 50px;
+}
+
 
 /* .selecionado {
     left: 0;

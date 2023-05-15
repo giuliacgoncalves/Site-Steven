@@ -61,3 +61,6 @@
   height: 50px;
 }
 
+.star {
+  background-color: var(--true-blue);
+}
