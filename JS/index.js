@@ -89,5 +89,4 @@ function trocarTema(evt) {
   }
 
   // document.querySelector(".caminhoCss").href = themeSteven;
-  console.log(caminho);
 }

@@ -1,0 +1,82 @@
+:root {
+    --redwood: #b43f4aff;
+    --mustard: #ffdc3eff;
+    --vanilla: #fef4acff;
+    --bright-pink-crayola: #ff5d6cff;
+    --bistre: #331f1fff;
+  }
+
+  .containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backLogin{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--redwood);
+    font-weight: 700;
+}
+
+#backLogin:hover{
+    color: var(--bright-pink-crayola);
+    font-weight: 700;
+    text-decoration: underline;
+}
+  
+  .divSteven {
+    background-color: var(--redwood);
+  }
+  
+  .imgSteven {
+    background-image: url("../Images/Steven.png");
+  }
+  
+  .fraseLogin {
+    color: var(--vanilla);
+  }
+  
+  .divLogin {
+    background-color: var(--vanilla);
+  }
+  
+  .containerLogin {
+    border: solid 3px var(--redwood);
+  }
+  
+  .login {
+    /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+    background: linear-gradient(
+      to right,
+      var(--redwood),
+      var(--bright-pink-crayola)
+    );
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .inputLogin {
+    background-color: var(--vanilla);
+    border: 3px solid var(--mustard);
+  }
+  
+  .button {
+    background-color: var(--bright-pink-crayola);
+    border: 3px solid var(--redwood);
+  }
+  
+  .button:hover {
+    background-color: var(--redwood);
+  }
+  
+  /* ↓ menu ↓ */
+  
+  #steven {
+    width: 50px;
+    height: 47px;
+  }
+  
+  .star {
+    background-color: var(--bright-pink-crayola);
+  }

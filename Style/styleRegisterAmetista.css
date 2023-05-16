@@ -1,0 +1,81 @@
+ /* https://www.youtube.com/watch?v=Q_jJzUiG3HY 
+https://www.youtube.com/watch?v=SBq-kXXn1PQ
+https://www.youtube.com/watch?v=yU0mpEpBaGM*/
+:root{
+  --raisin-black: #232228ff;
+  --lavender-web: #dcd3f0ff;
+  --wisteria: rgb(188, 139, 216);
+  --phlox: #d752feff;
+  --amethyst: #a461edff;
+}
+
+.containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backLogin{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--raisin-black);
+    font-weight: 700;
+}
+
+#backLogin:hover{
+    color: var(--amethyst);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.divSteven{
+  background-color: var(--amethyst);
+}
+
+.imgSteven{
+  background-image: url('../Images/ametista.png');
+}
+
+.fraseLogin{
+  color: var(--lavender-web);
+}
+
+.divLogin{
+  background-color: var(--lavender-web);
+}
+
+.containerLogin{
+  border: solid 3px var(--amethyst);
+}
+
+.login{
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(to right, var(--amethyst), var(--phlox));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputLogin{
+  background-color: var(--lavender-web);
+  border: 3px solid var(--phlox);
+}
+
+.button{
+  background-color: var(--wisteria);
+  border: 3px solid var(--amethyst);
+}
+
+.button:hover{
+  background-color: var(--amethyst);
+}
+
+/* ↓ menu ↓ */
+
+#ametista{
+  width: 50px;
+  height: 50px;
+}
+
+.star {
+  background-color: var(--wisteria);
+}

@@ -37,3 +37,53 @@ function verificarEmailCadastrado(){
     document.getElementById('inpPassword').value = '';
     document.getElementById('inpConfirmPassword').value = '';
 }
+
+/* ↓ menu ↓ */
+
+var themeSteven = "../Style/styleRegisterSteven.css";
+var themeAmetista = "../Style/styleRegisterAmetista.css";
+var themePearl = "../Style/styleRegisterPearl.css";
+var themeGarnet = "../Style/styleRegisterGarnet.css";
+var themeLapis = "../Style/styleRegisterLapis.css";
+var buttonMenu = document.querySelector(".star");
+var gemButtons = document.querySelectorAll(".gemBtn");
+
+buttonMenu.addEventListener("click", () => {
+  let menu = document.querySelector(".containerRocks");
+  menu.classList.toggle("active");
+});
+
+gemButtons.forEach((gemBtn) => {
+  gemBtn.addEventListener("click", trocarTema);
+});
+
+/* ↓ Função de troca do tema ↓ */
+
+function trocarTema(evt) {
+  let alvoClicado = evt.target.parentNode;
+  let idAlvoClicado = alvoClicado.getAttribute("id");
+  let caminho = document.querySelector(".caminhoCss");
+  let temaAtual = caminho.getAttribute("href");
+
+  // parentNode
+
+  if (idAlvoClicado == "steven" && temaAtual != themeSteven) {
+    console.log("cliquei no steven");
+    // alvoClicado.classList.add("selecionado")
+    caminho.href = themeSteven;
+  } else if (idAlvoClicado == "pearl" && temaAtual != themePearl) {
+    console.log("cliquei na pearl");
+    caminho.href = themePearl;
+  } else if (idAlvoClicado == "ametista" && temaAtual != themeAmetista) {
+    console.log("cliquei na ametista");
+    caminho.href = themeAmetista;
+  } else if (idAlvoClicado == "garnet" && temaAtual != themeGarnet) {
+    console.log("cliquei na garnet");
+    caminho.href = themeGarnet;
+  } else if (idAlvoClicado == "lapis" && temaAtual != themeLapis) {
+    console.log("cliquei na lapis");
+    caminho.href = themeLapis;
+  }
+
+  // document.querySelector(".caminhoCss").href = themeSteven;
+}

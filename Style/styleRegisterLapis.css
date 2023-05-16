@@ -1,0 +1,87 @@
+:root {
+  --delft-blue: #262a65ff;
+  --true-blue: #306ab3ff;
+  --polynesian-blue: rgb(105, 143, 206);
+  --vivid-sky-blue: #4bc8f2ff;
+  --non-photo-blue: #afe0eeff;
+}
+
+.containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backLogin{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--true-blue);
+    font-weight: 700;
+}
+
+#backLogin:hover{
+    color: var(--delft-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.divSteven {
+  background-color: var(--delft-blue);
+}
+
+.imgSteven {
+  background-image: url("../Images/lapislazuli.png");
+}
+
+.fraseLogin {
+  color: var(--true-blue);
+}
+
+.divLogin {
+  background-color: var(--non-photo-blue);
+}
+
+.containerLogin {
+  border: solid 3px var(--true-blue);
+}
+
+.login {
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(
+    to right,
+    var(--delft-blue),
+    var(--vivid-sky-blue)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputLogin {
+  background-color: var(--polynesian-blue);
+  border: 3px solid var(--delft-blue);
+}
+
+::placeholder {
+  color: var(--non-photo-blue);
+}
+
+.button {
+  background-color: var(--true-blue);
+  border: 3px solid var(--delft-blue);
+  color: var(--non-photo-blue);
+}
+
+.button:hover {
+  background-color: var(--delft-blue);
+}
+
+/* ↓ menu ↓ */
+
+#lapis {
+  width: 35px;
+  height: 50px;
+}
+
+.star {
+  background-color: var(--true-blue);
+}

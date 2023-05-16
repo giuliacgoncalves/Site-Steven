@@ -1,0 +1,83 @@
+:root {
+  --oxford-blue: #010125ff;
+  --madder: #960026ff;
+  --chocolate-cosmos: #40041aff;
+  --hunyadi-yellow: #fabf6bff;
+  --federal-blue: rgb(24, 25, 116);
+}
+
+.containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backLogin{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--madder);
+    font-weight: 700;
+}
+
+#backLogin:hover{
+    color: var(--hunyadi-yellow);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.divSteven {
+  background-color: var(--madder);
+}
+
+.imgSteven {
+  background-image: url("../Images/garnet.jpg");
+}
+
+.fraseLogin {
+  color: var(--hunyadi-yellow);
+}
+
+.divLogin {
+  background-color: var(--federal-blue);
+}
+
+.containerLogin {
+  border: solid 3px var(--hunyadi-yellow);
+}
+
+.login {
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(to right, var(--madder), var(--hunyadi-yellow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputLogin {
+  background-color: var(--madder);
+  border: 3px solid var(--chocolate-cosmos);
+}
+
+::placeholder {
+  color: var(--hunyadi-yellow);
+}
+
+.button {
+  background-color: var(--chocolate-cosmos);
+  border: 3px solid var(--oxford-blue);
+  color: var(--hunyadi-yellow);
+}
+
+.button:hover {
+  background-color: var(--oxford-blue);
+}
+
+/* ↓ menu ↓ */
+
+#garnet {
+  width: 50px;
+  height: 50px;
+}
+
+.star {
+  background-color: var(--hunyadi-yellow);
+}

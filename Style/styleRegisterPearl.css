@@ -1,0 +1,77 @@
+:root {
+  --jasmine: #ffdf7bff;
+  --robin-egg-blue: #4dc4c6ff;
+  --light-cyan: rgb(215, 245, 248);
+  --fluorescent-cyan: #5bece1ff;
+  --ivory: #fefef2ff;
+}
+.containerButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#backLogin{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--robin-egg-blue);
+    font-weight: 700;
+}
+
+#backLogin:hover{
+    color: var(--fluorescent-cyan);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.divSteven {
+  background-color: var(--robin-egg-blue);
+}
+
+.imgSteven {
+  background-image: url("../Images/perola.png");
+}
+
+.fraseLogin {
+  color: var(--light-cyan);
+}
+
+.divLogin {
+  background-color: var(--light-cyan);
+}
+
+.containerLogin {
+  border: solid 3px var(--jasmine);
+}
+
+.login {
+  /* Para usar linear-gradient no texto deve-se usar o código a seguir: */
+  background: linear-gradient(to right, var(--robin-egg-blue), var(--jasmine));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.inputLogin {
+  background-color: var(--ivory);
+  border: 3px solid var(--jasmine);
+}
+
+.button {
+  background-color: var(--robin-egg-blue);
+  border: 3px solid var(--fluorescent-cyan);
+}
+
+.button:hover {
+  background-color: var(--fluorescent-cyan);
+}
+
+/* ↓ menu ↓ */
+
+#pearl {
+  width: 37px;
+  height: 50px;
+}
+
+.star {
+  background-color: var(--light-cyan);
+}
