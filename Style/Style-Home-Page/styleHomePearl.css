@@ -21,16 +21,17 @@ body{
 
 .buttonNav{
     border: 2px solid var(--jasmine);
-    background-color: var(--robin-egg-blue);
-    color: var(--jasmine);
+    background-color: var(--ivory);
+    color: var(--robin-egg-blue);
 }
 
 .buttonNav:hover{
     background-color: var(--fluorescent-cyan);
+    color: var(--jasmine);
 }
 
 .content{
-    background-color: var(--ivory);
+    background-color: var(--robin-egg-blue);
 }
 
 footer{

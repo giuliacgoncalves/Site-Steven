@@ -7,12 +7,12 @@
 }
 
 body{
-    background-color: var(--light-cyan);
+    background-color: var(--non-photo-blue);
 }
 
 .headerMenu{
-    background-color: var(--robin-egg-blue);
-    box-shadow: 0 5px 10px var(--jasmine);
+    background-color: var(--true-blue);
+    box-shadow: 0 5px 10px var(--delft-blue);
 }
 
 .logoCharacter{
@@ -20,19 +20,19 @@ body{
 }
 
 .buttonNav{
-    border: 2px solid var(--jasmine);
-    background-color: var(--robin-egg-blue);
-    color: var(--jasmine);
+    border: 2px solid var(--delft-blue);
+    background-color: var(--polynesian-blue);
+    color: var(--delft-blue);
 }
 
 .buttonNav:hover{
-    background-color: var(--fluorescent-cyan);
+    background-color: var(--vivid-sky-blue);
 }
 
 .content{
-    background-color: var(--ivory);
+    background-color: var(--vivid-sky-blue);
 }
 
 footer{
-    background-color: var(--robin-egg-blue);
+    background-color: var(--true-blue);
 }
