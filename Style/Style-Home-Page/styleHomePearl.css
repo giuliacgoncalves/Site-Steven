@@ -1,0 +1,38 @@
+:root{
+    --jasmine: #ffdf7bff;
+    --robin-egg-blue: #4dc4c6ff;
+    --light-cyan: rgb(215, 245, 248);
+    --fluorescent-cyan: #5bece1ff;
+    --ivory: #fefef2ff;
+}
+
+body{
+    background-color: var(--light-cyan);
+}
+
+.headerMenu{
+    background-color: var(--robin-egg-blue);
+    box-shadow: 0 5px 10px var(--jasmine);
+}
+
+.logoCharacter{
+    background-image: url("../../Images/PerolaFace.png");
+}
+
+.buttonNav{
+    border: 2px solid var(--jasmine);
+    background-color: var(--robin-egg-blue);
+    color: var(--jasmine);
+}
+
+.buttonNav:hover{
+    background-color: var(--fluorescent-cyan);
+}
+
+.content{
+    background-color: var(--ivory);
+}
+
+footer{
+    background-color: var(--robin-egg-blue);
+}

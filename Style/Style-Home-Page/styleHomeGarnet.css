@@ -1,0 +1,38 @@
+:root{
+    --oxford-blue: #010125ff;
+    --madder: #960026ff;
+    --chocolate-cosmos: #40041aff;
+    --hunyadi-yellow: #fabf6bff;
+    --federal-blue: rgb(24, 25, 116);
+}
+
+body{
+    background-color: var(--federal-blue);
+}
+
+.headerMenu{
+    background-color: var(--madder);
+    box-shadow: 0 5px 10px var(--oxford-blue);
+}
+
+.logoCharacter{
+    background-image: url("../../Images/garnetFace.png");
+}
+
+.buttonNav{
+    border: 2px solid var(--oxford-blue);
+    background-color: var(--chocolate-cosmos);
+    color: var(--hunyadi-yellow);
+}
+
+.buttonNav:hover{
+    background-color: var(--oxford-blue);
+}
+
+.content{
+    background-color: var(--hunyadi-yellow);
+}
+
+footer{
+    background-color: var(--madder);
+}
