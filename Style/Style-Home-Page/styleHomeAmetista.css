@@ -1,0 +1,38 @@
+:root{
+    --raisin-black: #232228ff;
+    --lavender-web: #dcd3f0ff;
+    --wisteria: rgb(188, 139, 216);
+    --phlox: #d752feff;
+    --amethyst: #a461edff;
+}
+
+body{
+    background-color: var(--lavender-web);
+}
+
+.headerMenu{
+    background-color: var(--amethyst);
+    box-shadow: 0 5px 10px var(--raisin-black);
+}
+
+.logoCharacter{
+    background-image: url("../../Images/AmetistaFace.png");
+}
+
+.buttonNav{
+    background-color: var(--lavender-web);
+    border: 2px solid var(--raisin-black);
+    color: var(--raisin-black);
+}
+
+.buttonNav:hover{
+    background-color: var(--wisteria);
+}
+
+.content{
+    background-color: var(--phlox);
+}
+
+footer{
+    background-color: var(--amethyst);
+}

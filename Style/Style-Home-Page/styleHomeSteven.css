@@ -1,0 +1,38 @@
+:root{
+    --redwood: #b43f4aff;
+    --mustard: #ffdc3eff;
+    --vanilla: #fef4acff;
+    --bright-pink-crayola: #ff5d6cff;
+    --bistre: #331f1fff;
+}
+
+body{
+    background-color: var(--vanilla);
+}
+
+.headerMenu{
+    background-color: var(--redwood);
+    box-shadow: 0 5px 10px var(--bistre);
+}
+
+.logoCharacter{
+    background-image: url("../../Images/StevenFace.png");
+}
+
+.buttonNav{
+    background-color: var(--vanilla);
+    border: 2px solid var(--bistre);
+    color: var(--bistre);
+}
+
+.buttonNav:hover{
+    background-color: var(--mustard);
+}
+
+.content{
+    background-color: var(--bright-pink-crayola);
+}
+
+footer{
+    background-color: var(--redwood);
+}
