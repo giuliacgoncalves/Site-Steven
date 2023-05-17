@@ -1,0 +1,38 @@
+:root{
+    --delft-blue: #262a65ff;
+    --true-blue: #306ab3ff;
+    --polynesian-blue: rgb(105, 143, 206);
+    --vivid-sky-blue: #4bc8f2ff;
+    --non-photo-blue: #afe0eeff;
+}
+
+body{
+    background-color: var(--light-cyan);
+}
+
+.headerMenu{
+    background-color: var(--robin-egg-blue);
+    box-shadow: 0 5px 10px var(--jasmine);
+}
+
+.logoCharacter{
+    background-image: url("../../Images/lapisFace.png");
+}
+
+.buttonNav{
+    border: 2px solid var(--jasmine);
+    background-color: var(--robin-egg-blue);
+    color: var(--jasmine);
+}
+
+.buttonNav:hover{
+    background-color: var(--fluorescent-cyan);
+}
+
+.content{
+    background-color: var(--ivory);
+}
+
+footer{
+    background-color: var(--robin-egg-blue);
+}
