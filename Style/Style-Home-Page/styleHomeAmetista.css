@@ -20,19 +20,23 @@ body{
 }
 
 .buttonNav{
-    background-color: var(--lavender-web);
+    background-color: var(--wisteria);
     border: 2px solid var(--raisin-black);
     color: var(--raisin-black);
 }
 
 .buttonNav:hover{
-    background-color: var(--wisteria);
+    background-color: var(--phlox);
 }
 
 .content{
-    background-color: var(--phlox);
+    background-color: var(--amethyst);
 }
 
 footer{
     background-color: var(--amethyst);
+}
+
+.paragraph{
+    color: var(--lavender-web);
 }
