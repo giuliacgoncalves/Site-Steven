@@ -1,31 +1,7 @@
 // ParentNode: Get the node name of the parent node of propertie
 // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_node_parentnode
 
-const characters = {
-    steven: {
-        firstImg: "../Images/stevenContent.png",
-        secondImg: "../Images/ToddlerSteven.png",
-        firstParagraph: '*Steven Quartzo Universo* é o personagem principal da série. Steven é o filho de Rose Quartz (Diamante Rosa), a ex-líder das Crystal Gems, e passa a viver com elas. Ao mesmo tempo que convive com sua vida humana em Beach City, também convive com o mundo Gem, indo atrás de artefatos Gems, derrotando Gems Corrompidas e descobrindo sobre o passado das Gems do Planeta Natal, que tentaram colonizar a Terra.',
-        secondParagraph: 'Steven tem uma personalidade amigável, sendo sempre carinhoso e solidário, apoiando e sempre tentando ajudar ao máximo os outros, um traço apreciado pelos moradores de Beach City. Ele ama aventuras e quer salvar o universo junto com as Crystal Gems, mesmo que ainda não tenha controlado totalmente os poderes de sua pedra, mas ele está sempre disposto a tentar dominá-los. Durante as missões, Steven é bastante agitado e ansioso, tentando sempre encarar o maior problema, mesmo que não consiga vencê-lo realmente. Mas isso pode ser contornado devido a seu jeito único de resolver problemas, eventualmente fazendo-os piores para, então, resolvê-los.'
-    },
-    ametista:{
-        firstImg: "../Images/AmetistaAntiga.png",
-        secondImg: "../Images/miniAmetista.png",
-        firstParagraph: 'Ametista, é um dos membros das Crystal Gems e uma das protagonistas da série. Ela foi a última Gem conhecida a ser fabricada na Terra como parte do projeto do Jardim de Infância. Após a Rebelião, Ametista se tornou uma Crystal Gem e passou a ajudar seus companheiros a proteger a Terra.',
-        secondParagraph:'Ametista é alegre e despreocupada. Barulhenta, bagunceira e quase nunca se importa com as coisas que os outros falam dela, ela acha tudo divertido e quase sempre age por impulso. Ela gosta de fazer brincadeiras e piadas com as Crystal Gems, principalmente Steven e Peridot.'
-    },
-    pearl{
-
-    },
-    garnet{
-
-    },
-    lapis{
-
-    }
-}
-
-
+import characters from "./characteres.js";
 
 let btnTemas = document.querySelectorAll('.buttonNav');
 
@@ -48,24 +24,27 @@ function trocarTema(evt) {
     if (idAlvoClicado == "steven" && temaAtual != themeSteven) {
       console.log("cliquei no steven");
       caminho.href = themeSteven;
-      localStorage.setItem("theme", themeSteven);
       changeHistorySteven();
+      localStorage.setItem("theme", themeSteven);
     } else if (idAlvoClicado == "pearl" && temaAtual != themePearl) {
       console.log("cliquei na pearl");
       caminho.href = themePearl;
+      changeHistoryPerola();
       localStorage.setItem("theme", themePearl);
     } else if (idAlvoClicado == "ametista" && temaAtual != themeAmetista) {
       console.log("cliquei na ametista");
       caminho.href = themeAmetista;
-      localStorage.setItem("theme", themeAmetista);
       changeHistoryAmetista();
+      localStorage.setItem("theme", themeAmetista);
     } else if (idAlvoClicado == "garnet" && temaAtual != themeGarnet) {
       console.log("cliquei na garnet");
       caminho.href = themeGarnet;
+      changeHistoryGarnet();
       localStorage.setItem("theme", themeGarnet);
     } else if (idAlvoClicado == "lapis" && temaAtual != themeLapis) {
       console.log("cliquei na lapis");
       caminho.href = themeLapis;
+      changeHistoryLapis()
       localStorage.setItem("theme", themeLapis);
     }
 }
@@ -74,7 +53,8 @@ function changeHistorySteven(){
     var firstImg = document.getElementById('rightImg');
     var secondImg = document.getElementById('leftImg');
     var firstParagraph = document.getElementById('firstParagraph');
-    var secondParagraph = document.getElementById('secondParagraph')
+    var secondParagraph = document.getElementById('secondParagraph');
+    var link = document.getElementById("link");
 
     firstImg.src = characters.steven.firstImg;
 
@@ -83,6 +63,8 @@ function changeHistorySteven(){
     firstParagraph.innerHTML = characters.steven.firstParagraph;
 
     secondParagraph.innerHTML = characters.steven.secondParagraph;
+
+    link.href = characters.steven.link;
 
     // var img = document.createElement('img');
     // img.src = '../Images/stevenContent.png';
@@ -93,7 +75,8 @@ function changeHistoryAmetista(){
     var firstImg = document.getElementById('rightImg');
     var secondImg = document.getElementById('leftImg');
     var firstParagraph = document.getElementById('firstParagraph');
-    var secondParagraph = document.getElementById('secondParagraph')
+    var secondParagraph = document.getElementById('secondParagraph');
+    var link = document.getElementById("link");
 
     firstImg.src = characters.ametista.firstImg;
 
@@ -102,4 +85,60 @@ function changeHistoryAmetista(){
     firstParagraph.innerHTML = characters.ametista.firstParagraph;
 
     secondParagraph.innerHTML = characters.ametista.secondParagraph;
+
+    link.href = characters.ametista.link;
+}
+
+function changeHistoryPerola(){
+    var firstImg = document.getElementById('rightImg');
+    var secondImg = document.getElementById('leftImg');
+    var firstParagraph = document.getElementById('firstParagraph');
+    var secondParagraph = document.getElementById('secondParagraph');
+    var link = document.getElementById("link");
+
+    firstImg.src = characters.pearl.firstImg;
+
+    secondImg.src = characters.pearl.secondImg;
+
+    firstParagraph.innerHTML = characters.pearl.firstParagraph;
+
+    secondParagraph.innerHTML = characters.pearl.secondParagraph;
+
+    link.href = characters.pearl.link;
+}
+
+function changeHistoryGarnet(){
+  var firstImg = document.getElementById('rightImg');
+  var secondImg = document.getElementById('leftImg');
+  var firstParagraph = document.getElementById('firstParagraph');
+  var secondParagraph = document.getElementById('secondParagraph');
+  var link = document.getElementById("link");
+
+  firstImg.src = characters.garnet.firstImg;
+
+  secondImg.src = characters.garnet.secondImg;
+
+  firstParagraph.innerHTML = characters.garnet.firstParagraph;
+
+  secondParagraph.innerHTML = characters.garnet.secondParagraph;
+
+  link.href = characters.garnet.link;
+}
+
+function changeHistoryLapis(){
+  var firstImg = document.getElementById('rightImg');
+  var secondImg = document.getElementById('leftImg');
+  var firstParagraph = document.getElementById('firstParagraph');
+  var secondParagraph = document.getElementById('secondParagraph');
+  var link = document.getElementById("link");
+
+  firstImg.src = characters.lapis.firstImg;
+
+  secondImg.src = characters.lapis.secondImg;
+
+  firstParagraph.innerHTML = characters.lapis.firstParagraph;
+
+  secondParagraph.innerHTML = characters.lapis.secondParagraph;
+
+  link.href = characters.lapis.link;
 }
