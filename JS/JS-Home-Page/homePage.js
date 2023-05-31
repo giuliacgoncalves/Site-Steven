@@ -22,123 +22,46 @@ function trocarTema(evt) {
     let temaAtual = caminho.getAttribute("href");
   
     if (idAlvoClicado == "steven" && temaAtual != themeSteven) {
-      console.log("cliquei no steven");
       caminho.href = themeSteven;
-      changeHistorySteven();
+      changeHistory("steven");
       localStorage.setItem("theme", themeSteven);
     } else if (idAlvoClicado == "pearl" && temaAtual != themePearl) {
-      console.log("cliquei na pearl");
       caminho.href = themePearl;
-      changeHistoryPerola();
+      changeHistory("pearl");
       localStorage.setItem("theme", themePearl);
     } else if (idAlvoClicado == "ametista" && temaAtual != themeAmetista) {
-      console.log("cliquei na ametista");
       caminho.href = themeAmetista;
-      changeHistoryAmetista();
+      changeHistory("ametista");
       localStorage.setItem("theme", themeAmetista);
     } else if (idAlvoClicado == "garnet" && temaAtual != themeGarnet) {
-      console.log("cliquei na garnet");
       caminho.href = themeGarnet;
-      changeHistoryGarnet();
+      changeHistory("garnet");
       localStorage.setItem("theme", themeGarnet);
     } else if (idAlvoClicado == "lapis" && temaAtual != themeLapis) {
-      console.log("cliquei na lapis");
       caminho.href = themeLapis;
-      changeHistoryLapis()
+      changeHistory("lapis");
       localStorage.setItem("theme", themeLapis);
     }
 }
 
-function changeHistorySteven(){
+function changeHistory(caracter){
     var firstImg = document.getElementById('rightImg');
     var secondImg = document.getElementById('leftImg');
     var firstParagraph = document.getElementById('firstParagraph');
     var secondParagraph = document.getElementById('secondParagraph');
     var link = document.getElementById("link");
 
-    firstImg.src = characters.steven.firstImg;
+    firstImg.src = characters[caracter].firstImg;
 
-    secondImg.src = characters.steven.secondImg;
+    secondImg.src = characters[caracter].secondImg;
 
-    firstParagraph.innerHTML = characters.steven.firstParagraph;
+    firstParagraph.innerHTML = characters[caracter].firstParagraph;
 
-    secondParagraph.innerHTML = characters.steven.secondParagraph;
+    secondParagraph.innerHTML = characters[caracter].secondParagraph;
 
-    link.href = characters.steven.link;
+    link.href = characters[caracter].link;
 
     // var img = document.createElement('img');
     // img.src = '../Images/stevenContent.png';
     // document.getElementById('imgParagraph').appendChild(img);
-}
-
-function changeHistoryAmetista(){
-    var firstImg = document.getElementById('rightImg');
-    var secondImg = document.getElementById('leftImg');
-    var firstParagraph = document.getElementById('firstParagraph');
-    var secondParagraph = document.getElementById('secondParagraph');
-    var link = document.getElementById("link");
-
-    firstImg.src = characters.ametista.firstImg;
-
-    secondImg.src = characters.ametista.secondImg;
-
-    firstParagraph.innerHTML = characters.ametista.firstParagraph;
-
-    secondParagraph.innerHTML = characters.ametista.secondParagraph;
-
-    link.href = characters.ametista.link;
-}
-
-function changeHistoryPerola(){
-    var firstImg = document.getElementById('rightImg');
-    var secondImg = document.getElementById('leftImg');
-    var firstParagraph = document.getElementById('firstParagraph');
-    var secondParagraph = document.getElementById('secondParagraph');
-    var link = document.getElementById("link");
-
-    firstImg.src = characters.pearl.firstImg;
-
-    secondImg.src = characters.pearl.secondImg;
-
-    firstParagraph.innerHTML = characters.pearl.firstParagraph;
-
-    secondParagraph.innerHTML = characters.pearl.secondParagraph;
-
-    link.href = characters.pearl.link;
-}
-
-function changeHistoryGarnet(){
-  var firstImg = document.getElementById('rightImg');
-  var secondImg = document.getElementById('leftImg');
-  var firstParagraph = document.getElementById('firstParagraph');
-  var secondParagraph = document.getElementById('secondParagraph');
-  var link = document.getElementById("link");
-
-  firstImg.src = characters.garnet.firstImg;
-
-  secondImg.src = characters.garnet.secondImg;
-
-  firstParagraph.innerHTML = characters.garnet.firstParagraph;
-
-  secondParagraph.innerHTML = characters.garnet.secondParagraph;
-
-  link.href = characters.garnet.link;
-}
-
-function changeHistoryLapis(){
-  var firstImg = document.getElementById('rightImg');
-  var secondImg = document.getElementById('leftImg');
-  var firstParagraph = document.getElementById('firstParagraph');
-  var secondParagraph = document.getElementById('secondParagraph');
-  var link = document.getElementById("link");
-
-  firstImg.src = characters.lapis.firstImg;
-
-  secondImg.src = characters.lapis.secondImg;
-
-  firstParagraph.innerHTML = characters.lapis.firstParagraph;
-
-  secondParagraph.innerHTML = characters.lapis.secondParagraph;
-
-  link.href = characters.lapis.link;
 }

@@ -66,24 +66,19 @@ function trocarTema(evt) {
   let temaAtual = caminho.getAttribute("href");
   // parentNode  
     if (idAlvoClicado == "steven" && temaAtual != themeSteven) {
-      console.log("cliquei no steven");
       // alvoClicado.classList.add("selecionado")
       caminho.href = themeSteven;
       localStorage.setItem("theme", themeSteven);
     } else if (idAlvoClicado == "pearl" && temaAtual != themePearl) {
-      console.log("cliquei na pearl");
       caminho.href = themePearl;
       localStorage.setItem("theme", themePearl);
     } else if (idAlvoClicado == "ametista" && temaAtual != themeAmetista) {
-      console.log("cliquei na ametista");
       caminho.href = themeAmetista;
       localStorage.setItem("theme", themeAmetista);
     } else if (idAlvoClicado == "garnet" && temaAtual != themeGarnet) {
-      console.log("cliquei na garnet");
       caminho.href = themeGarnet;
       localStorage.setItem("theme", themeGarnet);
     } else if (idAlvoClicado == "lapis" && temaAtual != themeLapis) {
-      console.log("cliquei na lapis");
       caminho.href = themeLapis;
       localStorage.setItem("theme", themeLapis);
     }
